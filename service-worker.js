@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/CoWIN-Tracker/precache-manifest.5cbe61d27bf19775661d2b112655ede9.js"
+  "/CoWIN-Tracker/precache-manifest.208d4bf847910903f9ae6aae7a0c518e.js"
 );
 
 workbox.clientsClaim();
