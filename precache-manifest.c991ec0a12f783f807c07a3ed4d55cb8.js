@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "c958d4e0d8ba2880f064",
-    "url": "/CoWIN-Tracker/static/css/main.247c01da.chunk.css"
+    "revision": "42644417f34c4327fa8f",
+    "url": "/CoWIN-Tracker/static/css/main.f0d06bf7.chunk.css"
   },
   {
-    "revision": "c958d4e0d8ba2880f064",
+    "revision": "42644417f34c4327fa8f",
     "url": "/CoWIN-Tracker/static/js/main.ec489f4a.chunk.js"
   },
   {
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/CoWIN-Tracker/static/js/3.d795ef33.chunk.js"
   },
   {
-    "revision": "ebc072938ddfe70051f7a9379d2ae0ec",
+    "revision": "a77a7fe90d27e87b7df5442730f0a7b9",
     "url": "/CoWIN-Tracker/index.html"
   }
 ];
