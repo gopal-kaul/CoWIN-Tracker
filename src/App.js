@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { useState } from "react";
 import Centres from "./FetchCentres";
-import { Container } from "reactstrap";
+import { Container, Button ,Form,Label,Input } from "reactstrap";
 import DatePicker from "react-date-picker";
 
 function App() {
@@ -12,9 +12,9 @@ function App() {
   return (
     <div className="App ">
       <Container>
-        <form>
-          <label>Pincode : </label>
-          <input
+        <Form>
+          <Label>Pincode : </Label>
+          <Input
             type="number"
             min="100000"
             max="999999"
@@ -22,26 +22,26 @@ function App() {
             onChange={(e) => setPincode(e.target.value)}
           />
           <br></br>
-          <label>Date : </label>
+          <Label>Date : </Label>
           <DatePicker value={date} onChange={(d) => setDate(d)} />
           <br />
-          <button
+          <Button color='success'
             onClick={(e) => {
               e.preventDefault();
               setSubmitted(true);
             }}
           >
             Submit
-          </button>
-          <button
+          </Button>
+          <Button color='danger'
             onClick={(e) => {
               e.preventDefault();
               setSubmitted(false);
             }}
           >
             Reset
-          </button>
-        </form>
+          </Button>
+        </Form>
         {submitted && (
           <Centres
             pincode={pincode.toString()}

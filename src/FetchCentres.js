@@ -1,24 +1,27 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import Centre from "./components/centre";
+import {Spinner} from "reactstrap";
 export default function Centres({ pincode, date }) {
   const apiUrl = `https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode=${pincode}&date=${date}`;
   const [data, setData] = useState([]);
   const [empty, setEmpty] = useState(false);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     axios
       .get(apiUrl)
       .then((resp) => resp.data.centers)
       .then((resp) => {
         setData(resp);
+        setLoading(false);
         if (resp.length === 0) setEmpty(true);
       })
       .catch((e) => console.log(`Error : ${e}`));
   }, []);
   return (
     <>
-      {empty && "No Slots Available!"}
-      {data && (
+      {empty && <p>No Slots Available!</p>}
+      {data && loading ? <Spinner color="primary" /> : (
         <div>
           {data
             .filter((x) => parseInt(x.sessions[0].available_capacity) > 0)
