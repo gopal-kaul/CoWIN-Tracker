@@ -31,15 +31,19 @@ function App() {
         setCentres(resp);
         setLoading(false);
         console.log(resp);
-        (resp.length === 0) ? setEmpty(true) : setEmpty(false);
+        resp.length === 0 ? setEmpty(true) : setEmpty(false);
       })
       .catch((e) => console.log(`Error : ${e}`));
   };
   return (
-    <div className="App ">
+    <div className="App">
       <Container>
+        <center>
+          <h2>CoWIN - Tracker</h2>
+        </center>
         <Form>
-          <Label>Pincode : </Label>
+          <FormGroup>
+          <Label>Pincode </Label>
           <Input
             type="number"
             min="100000"
@@ -47,10 +51,12 @@ function App() {
             value={pincode}
             onChange={(e) => setPincode(e.target.value)}
           />
-          <br></br>
-          <Label>Date : </Label>
-          <DatePicker value={date} onChange={(d) => setDate(d)} />
+          </FormGroup>
+          <FormGroup>
+          <Label>Date  </Label>
           <br />
+          <DatePicker value={date} onChange={(d) => setDate(d)} />
+          </FormGroup>
           <FormGroup>
             <Label for="vaccine">Vaccine</Label>
             <Input
@@ -86,10 +92,9 @@ function App() {
               {centres
                 .filter((x) => parseInt(x.sessions[0].available_capacity) > 0)
                 .filter((x) => {
-                  if(vaccine!=='any')
-                    return x.sessions[0].vaccine===vaccine;
-                  else
-                    return true;
+                  if (vaccine !== "any")
+                    return x.sessions[0].vaccine === vaccine;
+                  else return true;
                 })
                 .map((x, i) => {
                   return (

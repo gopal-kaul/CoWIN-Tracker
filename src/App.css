@@ -1,9 +1,17 @@
-.Card{
+.Card {
   border: 1px solid grey;
   margin-bottom: 1rem;
   padding-top: 0.5rem;
 }
-label{
+label {
   font-size: 1.5rem;
   font-weight: 500;
+}
+
+.App{
+  padding-top: 20vh;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 100vh;
+  width: 100vw;
 }
