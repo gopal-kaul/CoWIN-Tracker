@@ -31,7 +31,7 @@ function App() {
         setCentres(resp);
         setLoading(false);
         console.log(resp);
-        if (resp.length === 0) setEmpty(true);
+        (resp.length === 0) ? setEmpty(true) : setEmpty(false);
       })
       .catch((e) => console.log(`Error : ${e}`));
   };
