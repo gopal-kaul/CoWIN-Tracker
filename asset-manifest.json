@@ -1,7 +1,7 @@
 {
-  "main.css": "/CoWIN-Tracker/static/css/main.5502d5f7.chunk.css",
-  "main.js": "/CoWIN-Tracker/static/js/main.cad06585.chunk.js",
-  "main.js.map": "/CoWIN-Tracker/static/js/main.cad06585.chunk.js.map",
+  "main.css": "/CoWIN-Tracker/static/css/main.e909eeba.chunk.css",
+  "main.js": "/CoWIN-Tracker/static/js/main.8b5fbea8.chunk.js",
+  "main.js.map": "/CoWIN-Tracker/static/js/main.8b5fbea8.chunk.js.map",
   "runtime~main.js": "/CoWIN-Tracker/static/js/runtime~main.ff9b61d7.js",
   "runtime~main.js.map": "/CoWIN-Tracker/static/js/runtime~main.ff9b61d7.js.map",
   "static/css/2.d486a0e4.chunk.css": "/CoWIN-Tracker/static/css/2.d486a0e4.chunk.css",
@@ -10,8 +10,8 @@
   "static/js/3.40d1f8f4.chunk.js": "/CoWIN-Tracker/static/js/3.40d1f8f4.chunk.js",
   "static/js/3.40d1f8f4.chunk.js.map": "/CoWIN-Tracker/static/js/3.40d1f8f4.chunk.js.map",
   "index.html": "/CoWIN-Tracker/index.html",
-  "precache-manifest.0c1a391dc7de7a7d7c31949cdea720d6.js": "/CoWIN-Tracker/precache-manifest.0c1a391dc7de7a7d7c31949cdea720d6.js",
+  "precache-manifest.a0b2d7e6417d2a4aedb5897ae2f91f14.js": "/CoWIN-Tracker/precache-manifest.a0b2d7e6417d2a4aedb5897ae2f91f14.js",
   "service-worker.js": "/CoWIN-Tracker/service-worker.js",
   "static/css/2.d486a0e4.chunk.css.map": "/CoWIN-Tracker/static/css/2.d486a0e4.chunk.css.map",
-  "static/css/main.5502d5f7.chunk.css.map": "/CoWIN-Tracker/static/css/main.5502d5f7.chunk.css.map"
+  "static/css/main.e909eeba.chunk.css.map": "/CoWIN-Tracker/static/css/main.e909eeba.chunk.css.map"
 }
