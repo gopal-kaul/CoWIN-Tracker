@@ -36,26 +36,37 @@ function App() {
       .catch((e) => console.log(`Error : ${e}`));
   };
   return (
-    <div className="App">
+    <div
+      style={{
+        backgroundImage: `url(${process.env.PUBLIC_URL + "/bg.jpg"})`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundAttachment: "scroll",
+        height: '100vh', 
+        backgroundRepeat: "no-repeat",
+      }}
+      className="App"
+    >
       <Container>
+        <div className='con1'>
         <center>
           <h2>CoWIN - Tracker</h2>
         </center>
         <Form>
           <FormGroup>
-          <Label>Pincode </Label>
-          <Input
-            type="number"
-            min="100000"
-            max="999999"
-            value={pincode}
-            onChange={(e) => setPincode(e.target.value)}
-          />
+            <Label>Pincode </Label>
+            <Input
+              type="number"
+              min="100000"
+              max="999999"
+              value={pincode}
+              onChange={(e) => setPincode(e.target.value)}
+            />
           </FormGroup>
           <FormGroup>
-          <Label>Date  </Label>
-          <br />
-          <DatePicker value={date} onChange={(d) => setDate(d)} />
+            <Label>Date </Label>
+            <br />
+            <DatePicker value={date} onChange={(d) => setDate(d)} />
           </FormGroup>
           <FormGroup>
             <Label for="vaccine">Vaccine</Label>
@@ -73,7 +84,7 @@ function App() {
               <option>COVISHIELD</option>
             </Input>
           </FormGroup>
-          <Button
+          <Button 
             color="primary"
             onClick={(e) => {
               e.preventDefault();
@@ -83,6 +94,8 @@ function App() {
             Submit
           </Button>
         </Form>
+        </div>
+        <div className='con2'>
         {empty && <h3>No Slots Available!</h3>}
         {centres &&
           (loading ? (
@@ -113,6 +126,7 @@ function App() {
                 })}
             </div>
           ))}
+          </div>
       </Container>
     </div>
   );
